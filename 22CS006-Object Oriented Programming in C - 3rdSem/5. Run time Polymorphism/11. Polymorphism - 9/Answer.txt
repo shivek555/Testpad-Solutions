@@ -1,0 +1,60 @@
+1.)
+var1->m1();
+Frosty m1
+
+2.)
+var1->m2();
+ERROR
+
+
+3.)
+var1->m3();
+Frosty m3
+
+
+4.)
+var2->m1();
+Frosty m1
+
+5.)
+var2->m2();
+ERROR
+
+
+6.)
+var2->m3();
+Grinch m3   Frosty m3
+
+
+7.)
+var3->m2();
+ERROR
+
+
+8.)
+var4->m1();
+Rudolph m3   Santa m3   Santa m1 
+
+
+9.)
+((Frosty*) var1)->m1();
+Frosty m1
+
+10.)
+((Frosty*) var1)->m4();
+ERROR
+
+
+11.)
+((Grinch*) var1)->m4();
+CRASH
+
+12.)
+((Grinch*) var2)->m4();
+Grinch m4   Grinch m3   Frosty m3 
+
+13.)
+((Rudolph*) var3)->m2();
+Grinch m2   Frosty m1   
+
+
